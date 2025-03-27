@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.className.variable}>
+      <body className={jetbrainsMono.className}>
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>     

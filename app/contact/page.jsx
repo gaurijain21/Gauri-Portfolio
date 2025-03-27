@@ -14,7 +14,7 @@ import {
     SelectValue
 } from "@/components/ui/select";
 
-import {FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const info = [
     {
@@ -39,7 +39,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
     return (
-        <motion.section initial={{opacity: 0}} animate={{opacity: 1, transition: {delay:2.4, duration: 0.4, ease: 'easeIn'}}} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
+        <motion.section initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: 'easeIn'}}} className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row gap-[30px]">
                     {/* form */}
@@ -49,15 +49,15 @@ const Contact = () => {
                             <p className="text-white/60">lorem ipsum dolor isut.</p>
                             {/*input*/}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <input type="firstname" placeholder="Firstname"/>
-                                <input type="lastname" placeholder="Lastname"/>
-                                <input type="email" placeholder="Email"/>
-                                <input type="Phonenumber" placeholder="Phone Number"/>
+                                <Input type="text" placeholder="Firstname"/>
+                                <Input type="text" placeholder="Lastname"/>
+                                <Input type="email" placeholder="Email"/>
+                                <Input type="tel" placeholder="Phone Number"/>
                             </div>
                             {/* select */}
                             <Select>
                                 <SelectTrigger className="w-full">
-                                    <SelectValue placehollder="Select a service" />
+                                    <SelectValue placeholder="Select a service" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
@@ -69,7 +69,7 @@ const Contact = () => {
                                 </SelectContent>
                             </Select>
                             {/* textarea */}
-                            <Textarea className="h=[200px]" placeholder="Type your message here." />
+                            <Textarea className="h-[200px]" placeholder="Type your message here." />
                             {/* button */}
                             <Button size="md" className="max-w-40">Send Message</Button>
                         </form>
@@ -83,7 +83,7 @@ const Contact = () => {
                                         <div className="text-[28px]">{item.icon}</div>
                                     </div>
                                     <div className="flex-1">
-                                        <p classNme="text-white/60">{item.title}</p>
+                                        <p className="text-white/60">{item.title}</p>
                                         <h3 className="text-xl">{item.description}</h3>
                                     </div>
                                 </li>

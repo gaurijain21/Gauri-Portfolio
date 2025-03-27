@@ -11,8 +11,24 @@ function Input({
     <input
       type={type}
       data-slot="input"
-      className={cn(
-        "flex h-[48px] rounded-md text-gray-900 dark:text-white border border-white/10 focus:border-accent font-light px-4 py-5 text-base placeholder:text-black outline-none",
+      className={cn(`
+        flex h-[48px] 
+        rounded-md 
+        border border-white/10
+        px-4 
+        py-2
+        text-base
+        font-light
+        placeholder:text-black
+        focus:border-accent
+        outline-none
+
+        text-gray-900 
+        bg-white
+
+        dark:text-white
+        dark-bg-[#27272c]
+        `,
         className
       )}
       {...props} />

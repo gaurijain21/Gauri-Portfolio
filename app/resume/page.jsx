@@ -149,7 +149,7 @@ import { motion } from "framer-motion";
 const Resume = () => {
     return (
         <motion.div 
-          inital={{opacity: 0}} 
+          initial={{opacity: 0}} 
           animate={{
             opacity: 1, 
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
@@ -168,7 +168,7 @@ const Resume = () => {
                 {/* content */}
                 <div className="min-h-[70vh] w-full">
                     {/* experience */}    
-                    <TabsContent value="experience" classname="w-full">
+                    <TabsContent value="experience" className="w-full">
                         <div className="flex flex-col gap-[30px] text-center xl:text-left">
                             <h3 className="text-4xl font-bold">{experience.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
@@ -192,7 +192,7 @@ const Resume = () => {
 
 
                     {/* education */}    
-                    <TabsContent value="education" classname="w-full">
+                    <TabsContent value="education" className="w-full">
                     <div className="flex flex-col gap-[30px] text-center xl:text-left">
                             <h3 className="text-4xl font-bold">{education.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
@@ -216,13 +216,13 @@ const Resume = () => {
                         
                     </TabsContent>
                     {/* skills */}    
-                    <TabsContent value="skills" classname="w-full h-full">
+                    <TabsContent value="skills" className="w-full h-full">
                         <div className="flex flex-col gap-[30px]">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{skills.title}</h3>
-                                <p classname="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                             </div>
-                            <ul classname="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
                                 {skills.skillList.map((skill, index) => {
                                     return <li key={index}>
                                         <TooltipProvider delayDuration={100}>
@@ -243,13 +243,13 @@ const Resume = () => {
 
 
                     {/* about */}    
-                    <TabsContent value="about" classname="w-full text-center xl:text-left">
+                    <TabsContent value="about" className="w-full text-center xl:text-left">
                         <div className="flex flex-col gap-[30px]">
                             <h3 className="text-4xl font-bold">{about.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                            <ul className="grid grid-cols-1 xl:grid-cold-2 gap-y-6 max-w-[620px] mx-suto xl:mx-0">
+                            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                                 {about.info.map((item, index) => {
-                                    return <li key={index} classname="flex items-center justify-center xl:justify-start gap-4">
+                                    return <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
                                         <span className="text-white/60">{item.fieldName }   </span>
                                         <span className="text-xl">{item.fieldValue}</span>
                                     </li>
